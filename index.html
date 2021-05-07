@@ -11,30 +11,32 @@
 <body>
     <h2>Rate NZ Native Birds!</h2>
     <form id="new-item">
-        <div class="form-item">
-            <label for="name">Name</label> &nbsp
-            <input type="text" id="name" required>
-        </div>
-        <br>
-        <div class="form-item">
-            <label for="status">Conservation Status</label> &nbsp
-            <select id="status" required>
-                <option value="" disabled selected></option>
-                <option value="Not Threatened">Not Threatened</option>
-                <option value="Threatened">Threatened</option>
-                <option value="At Risk">At Risk</option>
-                <option value="Critical">Critical</option>
-                <option value="Extinct">Extinct</option>
-            </select>
-        </div>
-        <br>
-        <div class="form-item">
-            <label for="rating">Rating out of 5</label> &nbsp
-            <input type="number" id="rating" min=1 max=5 required>
-        </div>
-        <br>
-        <div>
-            <input type="submit" value="save">
+        <div id="entry-div">
+            <div class="form-item">
+                <label for="name">Name</label> &nbsp
+                <input type="text" id="name" required>
+            </div>
+            <br>
+            <div class="form-item">
+                <label for="status">Conservation Status</label> &nbsp
+                <select id="status" required>
+                    <option value="" disabled selected></option>
+                    <option value="Not Threatened">Not Threatened</option>
+                    <option value="Threatened">Threatened</option>
+                    <option value="At Risk">At Risk</option>
+                    <option value="Critical">Critical</option>
+                    <option value="Extinct">Extinct</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-item">
+                <label for="rating">Rating out of 5</label> &nbsp
+                <input type="number" id="rating" min=1 max=5 required>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="save">
+            </div>
         </div>
         <hr>
     </form>
