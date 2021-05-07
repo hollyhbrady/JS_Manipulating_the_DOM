@@ -11,8 +11,8 @@
 }
 
 .native-bird-entry {
-    /* margin: 0.5rem 0.5rem; */
-    padding: 0.5rem 0.8rem;
+    margin: 0.5rem;
+    padding: 1rem;
     border: 3px solid #186b10;
     border-radius: 5%;
     background: #a2cfb0;

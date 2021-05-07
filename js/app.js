@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const newItem = document.querySelector('#new-item');
     newItem.addEventListener('submit', handleNewItemSubmit);
 
+    const deleteAllButton = document.querySelector('#delete-all');
+    deleteAllButton.addEventListener('click', handleDeleteAllClick);
 })
 
 const handleNewItemSubmit = function (event) {
@@ -31,4 +33,9 @@ const createNativeBirdEntry = function (form) {
     nativeBirdEntry.appendChild(rating);
 
     return nativeBirdEntry;
+}
+
+const handleDeleteAllClick = function (event) {
+    const nativeBird = document.querySelector('#entry');
+    nativeBird.innerHTML = '';
 }
