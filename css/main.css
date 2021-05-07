@@ -3,3 +3,17 @@
     flex-direction: row;
     justify-content: space-evenly;
 }
+
+#entry {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    list-style-type: none;
+}
+
+.native-bird-entry {
+    /* margin: 0.5rem 0.5rem; */
+    padding: 0.5rem 0.8rem;
+    border: 3px solid #186b10;
+    border-radius: 5%;
+    background: #a2cfb0;
+}

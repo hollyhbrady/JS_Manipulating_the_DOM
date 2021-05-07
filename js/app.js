@@ -16,7 +16,7 @@ const handleNewItemSubmit = function (event) {
 
 const createNativeBirdEntry = function (form) {
     const nativeBirdEntry = document.createElement('li');
-    nativeBirdEntry.classList.add('entry-item');
+    nativeBirdEntry.classList.add('native-bird-entry');
 
     const name = document.createElement('h3');
     name.textContent = form.name.value;
@@ -26,7 +26,7 @@ const createNativeBirdEntry = function (form) {
     status.textContent = form.status.value;
     nativeBirdEntry.appendChild(status);
 
-    const rating = document.createElement('p');
+    const rating = document.createElement('h4');
     rating.textContent = form.rating.value;
     nativeBirdEntry.appendChild(rating);
 
