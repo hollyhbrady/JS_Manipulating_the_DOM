@@ -13,5 +13,10 @@ const handleNewItemSubmit = function (event) {
 }
 
 const createNativeBirdEntry = function (form) {
-    
+    const nativeBirdEntry = document.createElement('li');
+    nativeBirdEntry.classList.add('entries-item');
+
+    const name = document.createElement('h3');
+    name.textContent = form.name.value;
+    nativeBirdEntry.appendChild(name);
 }
