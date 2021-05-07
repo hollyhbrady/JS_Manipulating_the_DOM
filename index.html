@@ -13,12 +13,12 @@
     <form id="new-item">
         <div id="entry-div">
             <div class="form-item">
-                <label for="name">Name</label> &nbsp
+                <label for="name">Name:</label> &nbsp
                 <input type="text" id="name" required>
             </div>
             <br>
             <div class="form-item">
-                <label for="status">Conservation Status</label> &nbsp
+                <label for="status">Conservation Status:</label> &nbsp
                 <select id="status" required>
                     <option value="" disabled selected></option>
                     <option value="Not Threatened">Not Threatened</option>
@@ -30,8 +30,18 @@
             </div>
             <br>
             <div class="form-item">
-                <label for="rating">Rating out of 5</label> &nbsp
+                <label for="rating">Rating out of 5:</label> &nbsp
                 <input type="number" id="rating" min=1 max=5 required>
+            </div>
+            <br>
+            <div>Previous Award winner?</div>
+            <div class="form-item">
+                <input type="radio" name="check" value="yes">
+                <label for="yes">Yes</label>
+            </div>
+            <div class="form-item">
+                <input type="radio" name="check" value="no" checked>
+                <label for="no">No</label>
             </div>
             <br>
             <div>

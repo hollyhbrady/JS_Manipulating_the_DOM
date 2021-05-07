@@ -32,6 +32,10 @@ const createNativeBirdEntry = function (form) {
     rating.textContent = form.rating.value;
     nativeBirdEntry.appendChild(rating);
 
+    const radio = document.createElement('h4');
+    radio.textContent = form.radio.value;
+    nativeBirdEntry.appendChild(radio);
+
     return nativeBirdEntry;
 }
 
