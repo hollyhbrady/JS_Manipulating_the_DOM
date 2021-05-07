@@ -19,4 +19,14 @@ const createNativeBirdEntry = function (form) {
     const name = document.createElement('h3');
     name.textContent = form.name.value;
     nativeBirdEntry.appendChild(name);
+
+    const status = document.createElement('h4');
+    status.textContent = form.status.value;
+    nativeBirdEntry.appendChild(status);
+
+    const rating = document.createElement('p');
+    rating.textContent = form.rating.value;
+    nativeBirdEntry.appendChild(rating);
+
+    return nativeBirdEntry;
 }
