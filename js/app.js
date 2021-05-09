@@ -21,19 +21,27 @@ const createNativeBirdEntry = function (form) {
     nativeBirdEntry.classList.add('native-bird-entry');
 
     const name = document.createElement('h3');
-    name.textContent = form.name.value;
+    name.textContent = `Name: ${form.name.value}`;
     nativeBirdEntry.appendChild(name);
 
     const status = document.createElement('h4');
-    status.textContent = form.status.value;
+    status.textContent = `Status: ${form.status.value}`;
     nativeBirdEntry.appendChild(status);
 
     const rating = document.createElement('h4');
-    rating.textContent = form.rating.value;
+    rating.textContent = `Rating: ${form.rating.value}/5`;
     nativeBirdEntry.appendChild(rating);
 
     const radio = document.createElement('h4');
-    radio.textContent = form.radio.value;
+        let radioResult = function () {
+            if (form.radio === true) {
+                return "Yes";
+            } else {
+                return "No";
+            };
+        };
+    let result = radioResult()
+    radio.textContent = `Previous Winner? ${radioResult()}`;
     nativeBirdEntry.appendChild(radio);
 
     return nativeBirdEntry;
